@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="You want to know more about me, Then I let you find out.">
+    <meta name="author" content="Da Silva Pinto Kevin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kevin - About Me</title>
+    <link rel="shortcut icon" href="../../IMG/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../../JS/script.js" defer></script>
+</head>
+<body class="page">
+    <!-- ======== SCREEN SIZE LIMIT ======== -->
+    <div id="screenSizeLimit">
+        <button type="button" id="closeScreenSizeLimit">Let's see what you have to offer anyways.</button>
+        <p>Your screen need to be  at least <span id="screenSizeLimitWidth">px</span> by <span id="screenSizeLimitHeight">px</span>.</p>
+        <p><em>width by height</em></p>
+    </div>
+
+
+
+    <!-- ======== SCREEN TURN OFF ======== -->
+    <div id="screenTurnOff">
+        <p>Move your mouse to turn on your screen again.</p>
+        <p><em>It's possible that you may have to move it a lot.</em></p>
+    </div>
+
+
+
+    <!-- ======== HEADER ======== -->
+    <header class="program-header">
+        <div class="program-title">
+            <img src="./IMG/VN_icon.jpg" alt="">
+            <span>About Me</span>
+        </div>
+
+        <div class="program-right-options">
+            <button id="programCloseButton" class="programCloseButton" type="button" title="Close">&times;</button>
+        </div>
+    </header>
+
+
+
+    <!-- ======== ABOUT ME ======== -->
+    <main id="mainGame">
+
+
+
+        <!-- ======== PAGE PRELOADER ======== -->
+        <div id="pagePreloader">
+            <section>
+                <div class="loader-object"></div>
+                <div class="loader-object"></div>
+                <div class="loader-object"></div>
+                <div class="loader-object"></div>
+            </section>
+        </div>
+
+
+
+        <div id="visual-novel">
+
+            <button id="programToggleFullScreen" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" height="40">
+                    <path class="expand" d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/>
+                    <path class="compress" d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V64zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32H96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V64zM320 320c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V384h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320z"/>
+                </svg>
+            </button>
+
+            <!-- ======== MAIN SCREEN ======== -->
+            <div id="main-screen">
+                <h1>A Journey with a Swiss Dev</h1>
+                <div id="main-menu">
+                    <button type="button" id="playBtn">
+                        <h2>Play</h2>
+                    </button>
+                    <button type="button" id="creditsBtn">
+                        Credits
+                    </button>
+                </div>
+            </div>
+
+            <!-- ======== GAME SCREEN ======== -->
+            <div id="game-screen">
+                <button type="button" id="setAudioVolume">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="30" height="30" fill="currentColor">
+                        <path class="sound-on" d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"/>
+                        <path class="sound-off" d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM425 167l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/>
+                    </svg>
+                </button>
+
+                <div id="user-options"></div>
+                <div id="sprite">
+                    <img src="">
+                </div>
+                <div id="text-box">
+                    <div id="name">
+                        <p></p>
+                    </div>
+                    <div id="text">
+                        <p></p>
+                    </div>
+                </div>
+                <div id="quick-menu">
+                    <button type="button" id="hideBtn">Hide</button>
+                </div>
+            </div>
+
+            <!-- ======== CREDITS SCREEN ======== -->
+            <div id="credits-screen">
+                <button type="button" id="creditsCloseBtn">Back to title</button>
+                <div id="creditsContainer">
+                    <section>
+                        <h2>Story</h2>
+                        <div>
+                            <p>Da Silva Pinto Kevin</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Game Arts</h2>
+                        <div>
+                            <p>Da Silva Pinto Kevin</p>
+                            <p>Chat GPT</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ======== START MENU ======== -->
+        <div id="startMenu">
+            <div class="start-menu-row">
+                <div id="startMenuInput">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="16">
+                        <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                    </svg>
+                    <input type="text" placeholder="Nothing to search...">
+                </div>
+            </div>
+            <div class="start-menu-row">
+                <div class="start-menu-row-title">
+                    <h3>Pins</h3>
+                    <button>
+                        <span>All</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" height="12">
+                            <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="start-menu-row-container">
+
+                    <button class="start-menu-object" type="button" data-program="click" data-exe="progCalculator">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="../../IMG/Calculator.webp" type="image/webp">
+                                    <img src="../../IMG/Calculator.png" alt="Calculator">
+                                </picture>
+                            </span>
+                        <span>Calculator</span>
+                    </button>
+
+                    <button class="start-menu-object" type="button" data-program="click" data-link="https://github.com/NamelessProj">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="../../IMG/GitHub.webp" type="image/webp">
+                                    <img src="../../IMG/GitHub.png" alt="GitHub">
+                                </picture>
+                            </span>
+                        <span>GitHub</span>
+                    </button>
+
+                    <button class="start-menu-object" type="button" data-program="click" data-exe="">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="../../IMG/Calculator.webp" type="image/webp">
+                                    <img src="../../IMG/Calculator.png" alt="Calculator">
+                                </picture>
+                            </span>
+                        <span>Loose your time</span>
+                    </button>
+
+                    <button class="start-menu-object" type="button" data-program="click" data-link="https://codepen.io/Nameless_Project">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="../../IMG/codepen.webp" type="image/webp">
+                                    <img src="../../IMG/codepen.png" alt="CodePen">
+                                </picture>
+                            </span>
+                        <span>CodePen</span>
+                    </button>
+
+                    <button class="start-menu-object" type="button" data-program="click" data-link="https://www.behance.net/kevindasilv2">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="../../IMG/behance.webp" type="image/webp">
+                                    <img src="../../IMG/behance.png" alt="BeHance">
+                                </picture>
+                            </span>
+                        <span>BeHance</span>
+                    </button>
+
+                    <button class="start-menu-object" type="button" data-program="click" data-link="https://osu.ppy.sh/users/23371409">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="../../IMG/osu.webp" type="image/webp">
+                                    <img src="../../IMG/osu.png" alt="OSU!">
+                                </picture>
+                            </span>
+                        <span>OSU!</span>
+                    </button>
+
+
+                </div>
+            </div>
+            <div id="startMenuFooter">
+                <div class="start-menu-footer-container">
+                    <button type="button" class="user-wrapper" title="User">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" height="25">
+                            <path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"/>
+                        </svg>
+                        <img src="../../IMG/windows11_background.jpg" alt="Profile picture">
+                        <span>User</span>
+                    </button>
+                    <button type="button" id="shutdownScreen" class="shutdown-wrapper" title="Turn on/off">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="18">
+                            <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ======== WIFI AND BATTERY MENU ======== -->
+        <div id="wifiBattery">
+            <div>
+                <button type="button" class="wifi active">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" height="20">
+                        <path d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+                    </svg>
+                </button>
+                <span>Wifi</span>
+            </div>
+            <div>
+                <button type="button" class="bluetooth">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" height="20">
+                        <path d="M196.5 260l92.6-103.3L143.1 0v206.3l-86.1-86.1-31.4 31.4 108.1 108.4L25.6 368.4l31.4 31.4 86.1-86.1L145.8 512l148.6-148.6-97.9-103.3zm40.9-103l-50 50-.3-100.3 50.3 50.3zM187.4 313l50 50-50.3 50.3 .3-100.3z"/>
+                    </svg>
+                </button>
+                <span>Bluetooth</span>
+            </div>
+            <div>
+                <button type="button" class="planeMode">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" height="20">
+                        <path d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"/>
+                    </svg>
+                </button>
+                <span>Plane Mode</span>
+            </div>
+            <div class="volume"></div>
+        </div>
+
+
+
+        <!-- ======== NOTIFICATIONS PANEL ======== -->
+        <div id="notificationsPanel">
+            <div id="notificationsPanelTitle">
+                <h4>Notifications</h4>
+                <button type="button" id="notificationsPanelClear">Clear all</button>
+            </div>
+            <div id="notificationsPanelBody" class="">
+                <p id="emptyMessage">Were you expecting something special here? Well, it's empty.</p>
+
+                <div class="notification-block">
+                    <div class="notification-block-title">
+                        <picture>
+                            <source srcset="../../IMG/googleChrome.webp" type="image/webp">
+                            <img src="../../IMG/googleChrome.png" alt="Google Chrome">
+                        </picture>
+                        <p>Welcome to my Portfolio</p>
+                    </div>
+                    <div class="notification-block-body">
+                        <p>Your first time? Don't be afraid. If you feel like it, just click or double-click on a program.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- ======== TASKBAR ======== -->
+    <section id="taskbar">
+        <div class="taskbar-icon" id="windowsMenu" title="Start">
+            <picture>
+                <source srcset="../../IMG/windows_menu.webp" type="image/webp">
+                <img src="../../IMG/windows_menu.png" alt="Windows menu">
+            </picture>
+        </div>
+        <div class="taskbar-icon" data-program="click" data-link="https://youtu.be/xvFZjo5PgG0?si=y51tJYYCMTwLxebj">
+            <picture>
+                <source srcset="../../IMG/googleChrome.webp" type="image/webp">
+                <img src="../../IMG/googleChrome.png" alt="Google Chrome">
+            </picture>
+        </div>
+
+        <div id="menuRight">
+            <button type="button" id="wifiMenuBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" height="15">
+                    <path d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" height="15">
+                    <path d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"/>
+                </svg>
+            </button>
+
+            <!-- ======== TIME & DATE ======== -->
+
+            <button type="button" id="notifications">
+                    <span id="timeDate">
+                        <span id="time">00:00</span>
+                        <span id="date">01.01.2024</span>
+                    </span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" height="15">
+                    <path id="bellNotificationsFull" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
+                    <path id="bellNotificationsEmpty" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
