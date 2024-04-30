@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My portfolio. By the way, I'm Da Silva Pinto Kevin, nice to meet you.">
+    <meta name="author" content="Da Silva Pinto Kevin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Portfolio - Da Silva Pinto Kevin</title>
+
+    <link rel="shortcut icon" href="./IMG/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <script src="./JS/script.js" defer></script>
+    <script src="./JS/looseYourTime.js" defer></script>
+    <script src="./JS/calculator.js" defer></script>
+</head>
+<body>
+    <!-- ======== SCREEN SIZE LIMIT ======== -->
+    <div id="screenSizeLimit">
+        <button type="button" id="closeScreenSizeLimit">Let's see what you have to offer anyway.<br><span>(Spoiler alert: the website may not be as beautiful as me &#128546; so sad.)</span></button>
+        <p>Your screen need to be  at least <span id="screenSizeLimitWidth">px</span> by <span id="screenSizeLimitHeight">px</span>.</p>
+        <p><em>width by height</em></p>
+    </div>
+
+
+
+    <!-- ======== PRELOAD ANIMATION ======== -->
+    <div id="preloader">
+        <div id="loaderAnimation">
+            <span>This website requires JS.</span>
+        </div>
+        <svg id="loaderLogo" width="300" height="300" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M331.316 241V518V797H315.316V518V241H331.316ZM669.316 246L463.316 466C447.983 482 433.65 494.333 420.316 503C407.65 511 393.65 516.667 378.316 520C363.65 522.667 345.316 524.667 323.316 526C318.65 526 315.983 523.667 315.316 519C315.316 513.667 317.983 510.667 323.316 510C356.65 508.667 382.65 511 401.316 517C419.983 523 438.65 536.667 457.316 558L669.316 792L657.316 802L445.316 568C428.65 548.667 411.983 536.667 395.316 532C378.65 526.667 354.65 524.667 323.316 526C318.65 526 315.983 523.667 315.316 519C315.316 513.667 317.983 510.667 323.316 510C343.983 508.667 360.983 506.667 374.316 504C388.316 501.333 400.983 496.333 412.316 489C424.316 481.667 437.316 470.667 451.316 456L657.316 236L669.316 246ZM400.316 447L329.316 523C327.983 524.333 327.316 522.667 327.316 518C327.316 513.333 327.983 511.667 329.316 513L400.316 593L388.316 603L317.316 523C315.983 521.667 315.316 520 315.316 518C315.316 516 315.983 514.333 317.316 513L388.316 437L400.316 447ZM417.316 866L319.316 804C317.983 802.667 319.316 802 323.316 802C327.316 802 328.65 802.667 327.316 804L228.316 866L220.316 852L319.316 790C320.65 789.333 321.983 789 323.316 789C325.316 789 326.65 789.333 327.316 790L425.316 852L417.316 866ZM228.316 172L327.316 234C328.65 234.667 327.316 235 323.316 235C319.316 235 317.983 234.667 319.316 234L417.316 172L425.316 186L327.316 248C326.65 248.667 325.316 249 323.316 249C321.983 249 320.65 248.667 319.316 248L220.316 186L228.316 172ZM832.316 867L660.316 805C658.983 803.667 660.316 802.667 664.316 802C668.983 801.333 670.65 801.667 669.316 803L608.316 865L596.316 853L657.316 791C658.65 789.667 659.983 789 661.316 789C663.316 788.333 664.983 788.333 666.316 789L838.316 851L832.316 867ZM620.316 174L669.316 236C670.65 237.333 668.983 237.667 664.316 237C660.316 235.667 658.983 234.667 660.316 234L824.316 172L830.316 186L666.316 248C664.983 248.667 663.316 249 661.316 249C659.983 248.333 658.65 247.333 657.316 246L608.316 184L620.316 174ZM323.316 510C342.65 509.333 361.65 508.667 380.316 508C399.65 506.667 418.316 505.667 436.316 505C454.983 504.333 473.316 503.667 491.316 503V519C471.983 519.667 452.65 520.333 433.316 521C414.65 521.667 395.983 522.667 377.316 524C359.316 524.667 341.316 525.333 323.316 526V510ZM224.316 867C221.65 867 219.316 865.667 217.316 863C215.983 860.333 215.983 857.667 217.316 855C222.65 845 226.983 833.333 230.316 820C233.65 806 235.983 786.667 237.316 762C239.316 737.333 240.65 705 241.316 665C242.65 624.333 243.316 572.667 243.316 510C243.316 450.667 242.65 402 241.316 364C240.65 326 239.316 295.333 237.316 272C235.983 248.667 233.65 230.333 230.316 217C226.983 203.667 222.65 192.333 217.316 183C215.983 179.667 215.983 177 217.316 175C219.316 172.333 221.65 171 224.316 171H421.316C424.65 171 426.983 172.333 428.316 175C429.65 177 429.65 179.667 428.316 183C422.316 194.333 417.316 208.667 413.316 226C409.983 243.333 407.316 268.667 405.316 302C403.983 335.333 402.983 382 402.316 442L388.316 437C431.65 391 466.983 353 494.316 323C521.65 293 542.983 269 558.316 251C574.316 232.333 585.65 217.667 592.316 207C598.983 195.667 603.65 185.667 606.316 177C606.983 175 607.983 173.667 609.316 173C610.65 171.667 612.316 171 614.316 171H827.316C831.316 171 833.983 173 835.316 177C836.65 180.333 835.65 183.333 832.316 186C818.316 195.333 803.316 206.667 787.316 220C771.983 233.333 752.65 251.667 729.316 275C705.983 297.667 675.65 328.333 638.316 367C601.65 405.667 554.65 455.333 497.316 516V506C552.65 569.333 599.316 621.333 637.316 662C675.316 702.667 706.65 735.333 731.316 760C756.65 784.667 777.65 804 794.316 818C811.65 831.333 826.983 843 840.316 853C843.65 855 844.65 857.667 843.316 861C841.983 865 839.316 867 835.316 867H602.316C600.983 867 599.316 866.333 597.316 865C595.983 864.333 594.983 863 594.316 861C591.65 852.333 586.65 842.333 579.316 831C572.65 819.667 561.65 804.667 546.316 786C531.65 767.333 511.316 743.333 485.316 714C459.983 684 427.65 647 388.316 603L402.316 598C402.983 656.667 404.316 702.667 406.316 736C408.316 769.333 410.983 794.667 414.316 812C418.316 829.333 422.983 844 428.316 856C429.65 858.667 429.65 861 428.316 863C426.983 865.667 424.65 867 421.316 867H224.316ZM224.316 851H421.316L414.316 862C408.983 850 404.316 835.333 400.316 818C396.316 800.667 392.983 775 390.316 741C388.316 706.333 386.983 658.667 386.316 598C386.316 594.667 387.983 592.333 391.316 591C394.65 589 397.65 589.667 400.316 593C440.983 638.333 474.316 676 500.316 706C526.316 736 546.65 760.667 561.316 780C576.65 798.667 587.983 814 595.316 826C602.65 837.333 607.65 847.667 610.316 857L602.316 851H835.316L830.316 865C816.983 855 801.65 843.333 784.316 830C767.65 816 746.65 796.667 721.316 772C695.983 747.333 664.316 714.667 626.316 674C588.316 632.667 541.316 580 485.316 516C481.983 512.667 481.983 509.333 485.316 506C543.316 444.667 590.983 394.667 628.316 356C665.65 316.667 695.983 285.333 719.316 262C742.65 238.667 761.983 220.333 777.316 207C793.316 193.667 808.316 182 822.316 172L827.316 187H614.316L622.316 181C619.65 190.333 614.65 200.667 607.316 212C600.65 223.333 589.65 238.333 574.316 257C558.983 275 537.316 299.333 509.316 330C481.983 360.667 445.65 399.667 400.316 447C397.65 449.667 394.65 450.333 391.316 449C387.983 447.667 386.316 445.333 386.316 442C386.983 396 387.983 357.667 389.316 327C390.65 296.333 392.316 271.667 394.316 253C396.316 233.667 398.983 218 402.316 206C405.65 194 409.65 183.667 414.316 175L421.316 187H224.316L231.316 175C236.65 185 240.983 197 244.316 211C247.65 224.333 250.316 243 252.316 267C254.983 290.333 256.65 321.667 257.316 361C258.65 399.667 259.316 449.333 259.316 510C259.316 574 258.65 626.667 257.316 668C256.65 709.333 254.983 742.667 252.316 768C250.316 792.667 247.65 812.333 244.316 827C240.983 841 236.65 853 231.316 863L224.316 851Z"/>
+        </svg>
+    </div>
+
+
+
+    <!-- ======== SCREEN TURN OFF ======== -->
+    <div id="screenTurnOff">
+        <p>Move your mouse to turn on your screen again.</p>
+        <p><em>It's possible that you may have to move it a lot.</em></p>
+    </div>
+
+
+
+    <main>
+
+        <!-- ======== BG IMAGE ======== -->
+        <picture id="backgroundImage" class="bg-img">
+            <source srcset="./IMG/windows11_background.webp" type="image/webp">
+            <img src="./IMG/windows11_background.jpg" alt="Background image from Windows 11">
+        </picture>
+
+        <!-- ======== SCREEN ======== -->
+        <section id="screen">
+            
+            
+            
+            <!-- ======== PAGE PRELOADER ======== -->
+
+            <header id="pagePreloaderHeader" class="program-header">
+                <div class="program-title">
+                    <img src="" alt="">
+                    <span></span>
+                </div>
+
+                <div class="program-right-options">
+                    <button id="programCloseButton" class="programCloseButton">&times;</button>
+                </div>
+            </header>
+
+            <div id="pagePreloader">
+                <section>
+                    <div class="loader-object"></div>
+                    <div class="loader-object"></div>
+                    <div class="loader-object"></div>
+                    <div class="loader-object"></div>
+                </section>
+            </div>
+
+
+            <!-- ======== SCREEN ELEMENTS ======== -->
+
+            <div id="myPc" class="screen-element">
+                <button type="button" data-exe="fileExplorer">
+                    <picture>
+                        <img src="./IMG/Computer.png" alt="My Computer Icon">
+                    </picture>
+                    <p>My computer</p>
+                </button>
+            </div>
+
+
+            <div id="myProjects" class="exeFile screen-element" data-page="projects">
+                <button type="button" data-file="project">
+                    <picture>
+                        <img src="./PAGES/projects/IMG/project_icon.png" alt="My Projects Icon">
+                    </picture>
+                    <p>My Projects</p>
+                </button>
+            </div>
+
+            <div id="aboutMe" class="exeFile screen-element" data-page="aboutMe">
+                <button type="button" data-file="about">
+                    <picture>
+                        <img src="./PAGES/aboutMe/IMG/VN_icon.jpg" alt="About Me Icon">
+                    </picture>
+                    <p>About Me!</p>
+                </button>
+            </div>
+
+
+
+            <!-- ======== PROGRAM ======== -->
+
+            <div id="programDoesNotExist" class="program">
+                <header>
+                    <div class="program-title">
+                        <img src="./IMG/404.png" alt="">
+                        <span>This program does not exist</span>
+                    </div>
+
+                    <div class="program-right-options">
+                        <button class="programToggleFullScreen" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                <path class="expand" d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/>
+                                <path class="compress" d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V64zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32H96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V64zM320 320c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V384h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320z"/>
+                            </svg>
+                        </button>
+                        <button class="programCloseButton" type="button">&times;</button>
+                    </div>
+                </header>
+                <div class="program-main">
+                    <h2>Error 404!</h2>
+                    <h3>Program not found!</h3>
+                    <p>Sorry, but this program doesn't exist. I mean... sea what I can do.</p>
+                </div>
+            </div>
+
+
+
+            <!-- ======== FILE EXPLORER ======== -->
+
+            <div id="fileExplorer" class="program" style="--min-width: 670px;">
+                <header>
+                    <div class="program-title">
+                        <img src="./IMG/Explorer.png" alt="">
+                        <span>File Explorer</span>
+                    </div>
+
+                    <div class="program-right-options">
+                        <button class="programToggleFullScreen" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                <path class="expand" d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/>
+                                <path class="compress" d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V64zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32H96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V64zM320 320c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V384h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320z"/>
+                            </svg>
+                        </button>
+                        <button class="programCloseButton" type="button">&times;</button>
+                    </div>
+                </header>
+                <div class="program-main">
+                    <div id="fileExplorer_header">
+                        <div id="fileExplorer_header_actions">
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" height="13">
+                                    <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+                                </svg>
+                            </button>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" height="13">
+                                    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" height="13">
+                                    <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="13">
+                                    <path d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="fileExplorer_header_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" height="13">
+                                <path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V352H64V64H512z"/>
+                            </svg>
+                            <span>></span>
+                            <span id="fileExplorerHeaderLocationTab">Desktop</span>
+                            <span>></span>
+                        </div>
+                        <div id="fileExplorer_header_search">
+                            <input type="text" placeholder="Search in : Desktop">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="10">
+                                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="fileExplorer_header2"></div>
+                    <div id="fileExplorer_main">
+                        <div id="fileExplorer_main_explorer">
+                            <ul>
+                                <li>
+                                    <img src="./IMG/Computer.png" alt="Home">
+                                    <span>Home</span>
+                                </li>
+                                <li>
+                                    <img src="./IMG/Folder_OneDrive.png" alt="One Drive">
+                                    <span>NoDrive</span>
+                                </li>
+                            </ul>
+                            <div class="divider"></div>
+                            <ul>
+                                <li class="active">
+                                    <img src="./IMG/Folder_Desktop.png" alt="Desktop">
+                                    <span>Desktop</span>
+                                </li>
+                                <li>
+                                    <img src="./IMG/FolderDownloads.png" alt="Downloads">
+                                    <span>Downloads</span>
+                                </li>
+                                <li>
+                                    <img src="./IMG/FolderDocuments.png" alt="Documents">
+                                    <span>Documents</span>
+                                </li>
+                                <li>
+                                    <img src="./IMG/FolderPictures.png" alt="Pictures">
+                                    <span>Images</span>
+                                </li>
+                                <li>
+                                    <img src="./IMG/LibraryMusic.png" alt="Music">
+                                    <span>Music</span>
+                                </li>
+                                <li>
+                                    <img src="./IMG/LibraryVideos.png" alt="Video">
+                                    <span>Videos</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="fileExplorer_main_files">
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Modified the</th>
+                                    <th>Type</th>
+                                    <th>Volumes</th>
+                                </tr>
+                                <tr class="exeFile visible" data-explorer="desktop" data-page="projects" role="link">
+                                    <td>
+                                        <img src="./PAGES/projects/IMG/project_icon.png" alt="My projects">
+                                        <span>My Projects</span>
+                                    </td>
+                                    <td class="get-today">01.01.2024 00:00</td>
+                                    <td>Shorthand</td>
+                                    <td>1 Ko</td>
+                                </tr>
+                                <tr class="exeFile visible" data-explorer="desktop" data-page="aboutMe" role="link">
+                                    <td>
+                                        <img src="./PAGES/aboutMe/IMG/VN_icon.jpg" alt="About me">
+                                        <span>About Me!</span>
+                                    </td>
+                                    <td class="get-today">01.01.2024 00:00</td>
+                                    <td>Shorthand</td>
+                                    <td>1 Ko</td>
+                                </tr>
+
+                                <tr class="exeFile" data-sound="TuTuTuTu" data-explorer="music" role="link">
+                                    <td>
+                                        <img src="./IMG/Audio.png" alt="About me">
+                                        <span>TuTuTuTu.mp3</span>
+                                    </td>
+                                    <td class="get-today">01.01.2024 00:00</td>
+                                    <td></td>
+                                    <td>242 Ko</td>
+                                </tr>
+
+                                <!-- This is here to prevent the table from being completely empty -->
+                                <tr class="table">
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>I see you</span>
+                                    </td>
+                                    <td>01.01.2024 00:00</td>
+                                    <td>Shorthand</td>
+                                    <td>0 Ko</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ======== CALCULATOR ======== -->
+
+            <div id="progCalculator" class="program">
+                <header>
+                    <div class="program-title">
+                        <img src="./IMG/Calculator.png" alt="">
+                        <span>Calculator</span>
+                    </div>
+
+                    <div class="program-right-options">
+                        <button class="programCloseButton" type="button">&times;</button>
+                    </div>
+                </header>
+                <div class="program-main">
+                    <!-- ======== CALCULATOR ======== -->
+                    <div id="calculator">
+
+                        <!-- ======== CALCUL ======== -->
+                        <p id="calculatorCalculScreen">&emsp;</p>
+
+                        <!-- ======== INPUT NUMBER ======== -->
+                        <label>
+                            <h2 class="sr-only">Calculator screen</h2>
+                            <input type="text" inputmode="numeric" value="0" id="calculatorNumber" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                        </label>
+
+
+
+                        <!-- ======== BUTTONS ======== -->
+                        <div id="calculatorButtons">
+                            <button type="button" class="calculator-button" onclick="operationInstant('%');">&percnt;</button>
+                            <button type="button" class="calculator-button span-2" onclick="operationInstant('pi');">&pi;</button>
+                            <button type="button" class="calculator-button" onclick="clearAll();">AC</button>
+                            <button type="button" class="calculator-button" onclick="delLastNumber();">&leftarrow;</button>
+
+                            <button type="button" class="calculator-button" onclick="operationInstant('1/x');">1/&cross;</button>
+                            <button type="button" class="calculator-button" onclick="operationInstant('x2');">&cross;&sup2;</button>
+                            <button type="button" class="calculator-button" onclick="operationInstant('2/x');">&#x221A;x</button>
+                            <button type="button" class="calculator-button" onclick="operation('/', this);">&divide;</button>
+
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(7);">7</button>
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(8);">8</button>
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(9);">9</button>
+                            <button type="button" class="calculator-button" onclick="operation('x', this);">&times;</button>
+
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(4);">4</button>
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(5);">5</button>
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(6);">6</button>
+                            <button type="button" class="calculator-button" onclick="operation('-', this);">&minus;</button>
+
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(1);">1</button>
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(2);">2</button>
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(3);">3</button>
+                            <button type="button" class="calculator-button" onclick="operation('+', this);">&plus;</button>
+
+                            <button type="button" class="calculator-button calculator-number" onclick="opInverse();">&plusmn;</button>
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber(0);">0</button>
+                            <button type="button" class="calculator-button calculator-number" onclick="addNumber('.');">&comma;</button>
+                            <button type="button" class="calculator-button calculator-equal" onclick="opEqual();">&equals;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ======== VALIDATE FORM (Loose your time) ======== -->
+
+            <div id="progLooseYourTime" class="program">
+                <header>
+                    <div class="program-title">
+                        <img src="./IMG/form.png" alt="">
+                        <span>Loose your time</span>
+                    </div>
+
+                    <div class="program-right-options">
+                        <button class="programToggleFullScreen" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                <path class="expand" d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/>
+                                <path class="compress" d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V64zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32H96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V64zM320 320c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V384h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320z"/>
+                            </svg>
+                        </button>
+                        <button class="programCloseButton" type="button">&times;</button>
+                    </div>
+                </header>
+                <div class="program-main">
+                    <section>
+                        <!-- ======== FORM ======== -->
+                        <form>
+                            <div class="user-box">
+                                <input type="text" name="name" id="name" pattern="[a-zA-Z]{2,}" required>
+                                <label>Name</label>
+                            </div>
+
+                            <div class="user-box">
+                                <input type="text" name="lastname" id="lastname" pattern="[a-zA-Z]{2,}" required>
+                                <label>Lastname</label>
+                            </div>
+
+                            <div class="user-box">
+                                <input type="email" name="email" id="email" inputmode="email" pattern="[a-z\-0-9]{3,}@[a-z]{2,}.[a-z]{2,}" required>
+                                <label>Email</label>
+                            </div>
+
+                            <div class="user-box">
+                                <input type="text" name="address" id="address" inputmode="text" pattern="[a-zA-Z]{2,}" required>
+                                <label>Address</label>
+                            </div>
+
+                            <div class="user-box">
+                                <input type="text" name="postalCode" id="postalCode" inputmode="numeric" pattern="[0-9]{4}" required>
+                                <label>Postal code</label>
+                            </div>
+
+                            <div class="user-box">
+                                <input type="text" name="city" id="city" inputmode="text" pattern="[a-zA-Z]{2,}" required>
+                                <label>City</label>
+                            </div>
+
+                            <div class="user-box">
+                                <input type="text" name="tel" id="tel" inputmode="numeric" pattern="[0-9]{10}" required>
+                                <label>Tel</label>
+                            </div>
+
+                            <textarea name="msg" id="msg" placeholder="Your message..." rows="4" required></textarea>
+
+                            <!-- ======== SEND BTN ======== -->
+                            <button type="button" id="sendBtn">
+                                <span>Send</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor">
+                                    <path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <!-- ======== RESULT ======== -->
+                        <p id="result">&emsp;</p>
+                    </section>
+
+                    <!-- ======== VALIDATION MESSAGE ======== -->
+                    <div id="formValid">
+
+                        <!-- ======== CLOSING THE VALIDATION MESSAGE ======== -->
+                        <button type="button" id="closeFormValid">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512">
+                                <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
+                            </svg>
+                        </button>
+
+                        <h2>Thank you!</h2>
+                        <p>Now that we know everything from you, let conquer the world together!</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ======== ACTIVATE YOUR WINDOWS (perhaps) ======== -->
+            <div id="activateYourWindows">
+                <p>Your DevOS isn't activate yet.</p>
+                <p>To do so, I'm not a monster, you can just click here.</p>
+            </div>
+
+
+
+            <!-- ======== START MENU ======== -->
+            <div id="startMenu">
+                <div class="start-menu-row">
+                    <div id="startMenuInput">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="16">
+                            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                        </svg>
+                        <input type="text" placeholder="Nothing to search...">
+                    </div>
+                </div>
+                <div class="start-menu-row">
+                    <div class="start-menu-row-title">
+                        <h3>Pins</h3>
+                        <button>
+                            <span>All</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" height="12">
+                                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="start-menu-row-container">
+
+                        <button class="start-menu-object" type="button" data-program="click" data-exe="progCalculator">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="./IMG/Calculator.webp" type="image/webp">
+                                    <img src="./IMG/Calculator.png" alt="Calculator">
+                                </picture>
+                            </span>
+                            <span>Calculator</span>
+                        </button>
+
+                        <button class="start-menu-object" type="button" data-program="click" data-link="https://github.com/NamelessProj">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="./IMG/GitHub.webp" type="image/webp">
+                                    <img src="./IMG/GitHub.png" alt="GitHub">
+                                </picture>
+                            </span>
+                            <span>GitHub</span>
+                        </button>
+
+                        <button class="start-menu-object" type="button" data-program="click" data-exe="progLooseYourTime">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="./IMG/form.webp" type="image/webp">
+                                    <img src="./IMG/form.png" alt="Calculator">
+                                </picture>
+                            </span>
+                            <span>Loose your time</span>
+                        </button>
+
+                        <button class="start-menu-object" type="button" data-program="click" data-link="https://codepen.io/Nameless_Project">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="./IMG/codepen.webp" type="image/webp">
+                                    <img src="./IMG/codepen.png" alt="CodePen">
+                                </picture>
+                            </span>
+                            <span>CodePen</span>
+                        </button>
+
+                        <button class="start-menu-object" type="button" data-program="click" data-link="https://www.behance.net/kevindasilv2">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="./IMG/behance.webp" type="image/webp">
+                                    <img src="./IMG/behance.png" alt="BeHance">
+                                </picture>
+                            </span>
+                            <span>BeHance</span>
+                        </button>
+
+                        <button class="start-menu-object" type="button" data-program="click" data-link="https://osu.ppy.sh/users/23371409">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="./IMG/osu.webp" type="image/webp">
+                                    <img src="./IMG/osu.png" alt="OSU!">
+                                </picture>
+                            </span>
+                            <span>OSU!</span>
+                        </button>
+
+                        <button class="start-menu-object" type="button" data-program="click" data-exe="">
+                            <span class="start-menu-object-image">
+                                <picture>
+                                    <source srcset="./IMG/404.webp" type="image/webp">
+                                    <img src="./IMG/404.png" alt="GitHub">
+                                </picture>
+                            </span>
+                            <span>What I can't do</span>
+                        </button>
+
+
+                    </div>
+                </div>
+                <div id="startMenuFooter">
+                    <div class="start-menu-footer-container">
+                        <button type="button" class="user-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" height="25">
+                                <path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"/>
+                            </svg>
+                            <img src="./IMG/windows11_background.jpg" alt="Profile picture">
+                            <span>User</span>
+                        </button>
+                        <button type="button" id="shutdownScreen" class="shutdown-wrapper" title="Turn on/off">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="18">
+                                <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ======== WIFI AND BATTERY MENU ======== -->
+            <div id="wifiBattery">
+                <div>
+                    <button type="button" class="wifi active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" height="20">
+                            <path d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+                        </svg>
+                    </button>
+                    <span>Wifi</span>
+                </div>
+                <div>
+                    <button type="button" class="bluetooth">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" height="20">
+                            <path d="M196.5 260l92.6-103.3L143.1 0v206.3l-86.1-86.1-31.4 31.4 108.1 108.4L25.6 368.4l31.4 31.4 86.1-86.1L145.8 512l148.6-148.6-97.9-103.3zm40.9-103l-50 50-.3-100.3 50.3 50.3zM187.4 313l50 50-50.3 50.3 .3-100.3z"/>
+                        </svg>
+                    </button>
+                    <span>Bluetooth</span>
+                </div>
+                <div>
+                    <button type="button" class="planeMode">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" height="20">
+                            <path d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"/>
+                        </svg>
+                    </button>
+                    <span>Plane Mode</span>
+                </div>
+                <div class="volume"></div>
+            </div>
+
+
+
+            <!-- ======== NOTIFICATIONS PANEL ======== -->
+            <div id="notificationsPanel">
+                <div id="notificationsPanelTitle">
+                    <h4>Notifications</h4>
+                    <button type="button" id="notificationsPanelClear">Clear all</button>
+                </div>
+                <div id="notificationsPanelBody" class="">
+                    <p id="emptyMessage">Were you expecting something special here? Well, it's empty.</p>
+
+                    <div class="notification-block">
+                        <div class="notification-block-title">
+                            <picture>
+                                <source srcset="./IMG/googleChrome.webp" type="image/webp">
+                                <img src="./IMG/googleChrome.png" alt="Google Chrome">
+                            </picture>
+                            <p>Welcome to my Portfolio</p>
+                        </div>
+                        <div class="notification-block-body">
+                            <p>Your first time? Don't be afraid. If you feel like it, just click or double-click on a program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ======== CROWN ANIMATION ======== -->
+            <div id="crownContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" height="200">
+                    <path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"/>
+                </svg>
+            </div>
+
+        </section>
+
+        <!-- ======== CONTEXT MENU ======== -->
+        <section id="contextMenu">
+            <div class="contextmenu-section">
+                <a href="mailto:pintokevin2002@hotmail.com" class="contextmenu-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="20">
+                        <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
+                    </svg>
+                    <p>Contact me</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- ======== TASKBAR ======== -->
+        <section id="taskbar">
+            <div class="taskbar-icon" id="windowsMenu" title="Start">
+                <picture>
+                    <source srcset="./IMG/windows_menu.webp" type="image/webp">
+                    <img src="./IMG/windows_menu.png" alt="Windows menu">
+                </picture>
+            </div>
+            <div class="taskbar-icon" data-program="click" data-link="https://youtu.be/xvFZjo5PgG0?si=y51tJYYCMTwLxebj">
+                <picture>
+                    <source srcset="./IMG/googleChrome.webp" type="image/webp">
+                    <img src="./IMG/googleChrome.png" alt="Google Chrome">
+                </picture>
+            </div>
+
+            <div id="menuRight">
+                <button type="button" id="wifiMenuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" height="15">
+                        <path d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" height="15">
+                        <path d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"/>
+                    </svg>
+                </button>
+
+                <!-- ======== TIME & DATE ======== -->
+
+                <button type="button" id="notifications">
+                    <span id="timeDate">
+                        <span id="time">00:00</span>
+                        <span id="date">01.01.2024</span>
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" height="15">
+                        <path id="bellNotificationsFull" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
+                        <path id="bellNotificationsEmpty" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
