@@ -1,4 +1,4 @@
-[Live preview]()
+[Live preview](https://portfolio-psi-azure-25.vercel.app)
 
 # DevOS
 This is my Portfolio. My goal was to have a lot of fun doing it... I did.
