@@ -562,9 +562,9 @@ if(document.body.classList.contains('page')){
     // EXIT PAGE, BACK TO HOME PAGE
     const programCloseButton = document.getElementById('programCloseButton');
     programCloseButton.addEventListener('click', () => {
-        // IF THERE'S NOTHING TO GO BACK, THE ALERT WILL BE DISPLAY.
-        history.back();
-        setTimeout(() => { alert(`How did you manage to get there.`); }, 50);
+        const goBackToHomeLink = document.createElement('a');
+        goBackToHomeLink.setAttribute('href', '../../index.html');
+        goBackToHomeLink.click();
     });
 
 
