@@ -18,12 +18,12 @@ I won't tell you everything there is, you'll need to experiment by yourself to k
 
 Because my main page is Windows, for my other pages, I've choose to make game or program.
 
-## My Projects (Muse Dash)
+## My Projects (Muse Dash) [To the page](./PAGES/projects/)
 To show my projects. I've made something mostly inspired by the selection menu of the rhythm game "Muse Dash".
 
 You can navigate from project to project using the 2 arrows buttons. You can also let the slider slide automatically. For each project, at the bottom of the screen, there's some links and even an information button if you ever wanna more about a project.
 
-## About Me (Visual Novel)
+## About Me (Visual Novel) [To the page](./PAGES/aboutMe/)
 For a page like this one that I knew from the beginning that there would be a lot of text I was thinking on how to put a lot of text in a program or a game. Then I thought of "Higurashi" a Sound Novel I really like. So I've made a Visual Novel.
 
 The backgrounds images are from me, except the one use on the title screen that is from Chat GPT.
