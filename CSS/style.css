@@ -110,7 +110,7 @@ ul {
     display: none;
     position: absolute;
     inset: 0;
-    z-index: 1200;
+    z-index: 10000000;
     background: radial-gradient(#2229, #0009);
     justify-content: center;
     align-items: center;
