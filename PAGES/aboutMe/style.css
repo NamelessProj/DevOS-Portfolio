@@ -7,15 +7,15 @@
 }
 
 @font-face {
-    font-family: 'space-odyssey';
+    font-family: 'open-sans';
     font-weight: 400;
-    src: url("./FONTS/space-odyssey.ikiiko-com.woff2") format("woff2"),
-    url("./FONTS/space-odyssey.ikiiko-com.woff") format("woff"),
-    url("./FONTS/space-odyssey.ikiiko-com.otf");
+    src: url("./FONTS/open-sans.regular.woff2") format("woff2"),
+    url("./FONTS/open-sans.regular.woff") format("woff"),
+    url("./FONTS/open-sans.regular.ttf");
 }
 
 :root{
-    --ff-body: 'space-odyssey', system-ui, sans-serif;
+    --ff-body: 'open-sans', system-ui, sans-serif;
     --letter-spacing: 2px;
 }
 
