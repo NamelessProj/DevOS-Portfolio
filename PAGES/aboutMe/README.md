@@ -1,4 +1,4 @@
-# About Me (the page)
+# About Me
 For this page, I haven't just done a little thing just for me. I've done what I call a mini-library. What is it?
 
 I mean that you can use this to do your own Visual Novel on the web. But to do so, you'll need to follow my HTML.
