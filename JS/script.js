@@ -457,7 +457,7 @@ const contextMenuWidth = contextMenu.clientWidth;
 // ADDING ALL LINKS IN CONTEXTMENU
 contextMenuObject.forEach(obj => {
     contextMenu.innerHTML += `<div class="contextmenu-section">
-                <a href="${obj.Link}" class="contextmenu-row">
+                <a href="${obj.Link}" target="_blank" class="contextmenu-row">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="20">
                         <path d="${obj.Svg}"/>
                     </svg>
