@@ -1,4 +1,4 @@
-# About Me
+# About Me (the page)
 For this page, I haven't just done a little thing just for me. I've done what I call a mini-library. What is it?
 
 I mean that you can use this to do your own Visual Novel on the web. But to do so, you'll need to follow my HTML.
@@ -86,6 +86,39 @@ To know more about how to use the mini-library, you can read below.
 
 # Visual Novel Mini-Library
 One day I'll do a better version of that mini-library, I'll do a real library.
+
+## Table of contents
+- [About Me](#about-me)
+- [Visual Novel Mini-Library](#visual-novel-mini-library)
+  - [Table of contents](#table-of-contents)
+  - [How to use this](#how-to-use-this)
+  - [Settings](#settings)
+    - [WebP](#webp)
+  - [Characters](#characters)
+    - [Color](#color)
+    - [Sprites](#sprites)
+  - [Preparing each scene](#preparing-each-scene)
+    - [Background](#background)
+    - [Background music](#background-music)
+  - [Writing your story](#writing-your-story)
+    - [Next scene](#next-scene)
+      - [To a particular dialog in this scene](#to-a-particular-dialog-in-this-scene)
+      - [To a particular scene](#to-a-particular-scene)
+      - [To a particular dialog in another scene](#to-a-particular-dialog-in-another-scene)
+      - [To a particular dialog in the same scene](#to-a-particular-dialog-in-the-same-scene)
+    - [Name of the one who speak](#name-of-the-one-who-speak)
+    - [Writing text](#writing-text)
+    - [Writing speed](#writing-speed)
+    - [Options](#options)
+    - [Input](#input)
+  - [Sprite](#sprite)
+    - [Position](#position)
+    - [Mirror](#mirror)
+  - [Changing scene at the end of one](#changing-scene-at-the-end-of-one)
+    - [Changing just the scene](#changing-just-the-scene)
+    - [Changing the scene and the index](#changing-the-scene-and-the-index)
+    - [Staying in the same scene but to a particular index](#staying-in-the-same-scene-but-to-a-particular-index)
+    - [Staying in the same scene but to a particular index and we restart the music](#staying-in-the-same-scene-but-to-a-particular-index-and-we-restart-the-music)
 
 ## How to use this
 You need to add the files `visualNovel.js` and `script.js` at the end of your body tag and the only thing you need to do is to write your scenario into the `visualNovel.js`.
