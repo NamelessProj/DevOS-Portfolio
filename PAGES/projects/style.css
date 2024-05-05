@@ -3,7 +3,8 @@
 @font-face {
     font-family: 'quicksand';
     font-weight: 800;
-    src: url("./FONTS/Quicksand-Bold.woff2") format("woff2"),
+    src: 
+        url("./FONTS/Quicksand-Bold.woff2") format("woff2"),
         url("./FONTS/Quicksand-Bold.woff") format("woff"),
         url("./FONTS/Quicksand-Bold.ttf");
 }
@@ -11,7 +12,8 @@
 @font-face {
     font-family: 'quicksand';
     font-weight: 400;
-    src: url("./FONTS/Quicksand-Regular.woff2") format("woff2"),
+    src: 
+        url("./FONTS/Quicksand-Regular.woff2") format("woff2"),
         url("./FONTS/Quicksand-Regular.woff") format("woff"),
         url("./FONTS/Quicksand-Regular.ttf");
 }
@@ -74,6 +76,9 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     shape-margin: 1rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ul {
@@ -370,6 +375,7 @@ body.fullscreen #programToggleFullScreen .expand{ visibility: hidden; }
     inset-inline: 0;
     top: 50%;
     translate: 0 calc(-50% + 22px);
+    -webkit-mask-image: linear-gradient(90deg, #0000, #000, #000, #0000);
     mask-image: linear-gradient(90deg, #0000, #000, #000, #0000);
 }
 #wrapperMenu{
@@ -436,6 +442,7 @@ body.fullscreen #programToggleFullScreen .expand{ visibility: hidden; }
 
 #informationDialog::backdrop{
     background-image: radial-gradient(rgb(53 53 53 / .5), var(--clr-black));
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
 #informationDialog{
