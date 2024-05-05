@@ -118,6 +118,7 @@ ul {
     text-align: center;
     font-size: clamp(12px, 4vw, 32px);
     color: #eee;
+    -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
 }
 #screenSizeLimitWidth::before{ content: '720'; }
@@ -216,7 +217,7 @@ ul {
     width: calc(100% - var(--bar-width));
     aspect-ratio: 1;
     border-radius: inherit;
-    content: ''
+    content: '';
 }
 [role="progressbar"]::before {
     content: attr(aria-valuenow) "%";
@@ -268,10 +269,12 @@ ul {
 
 @keyframes blurScreen {
     from{
+        -webkit-backdrop-filter: blur(0);
         backdrop-filter: blur(0);
         color: #0000;
     }
     to{
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         color: #eee;
     }
@@ -342,6 +345,7 @@ main{
     inset-inline: 0;
     bottom: 0;
     background: #3338;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 
     color: #fff;
@@ -373,7 +377,7 @@ main{
     object-fit: contain;
     object-position: center;
 }
-#windowsMenu img{rotate: 180deg;}
+#windowsMenu img{ rotate: 180deg; }
 
 #menuRight{
     position: absolute;
@@ -424,6 +428,7 @@ main{
     gap: 12px;
     padding: 24px;
     background: #3339;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 5px;
     transition: transform .2s ease-in-out;
@@ -470,6 +475,7 @@ main{
     right: 10px;
     width: 325px;
     background: rgb(25 25 25 / .7);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     color: #fff;
     border-radius: 5px;
@@ -555,7 +561,7 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 8px;
-    background: transparent;
+    background: #0000;
     border: none;
     cursor: pointer;
     border-radius: 1px;
@@ -597,12 +603,8 @@ main{
     font-weight: 800;
 }
 
-#myProjects{
-    grid-area: 2 / 2 / 2 / 2;
-}
-#aboutMe{
-    grid-area: 3 / 2 / 3 / 2;
-}
+#myProjects{ grid-area: 2 / 2 / 2 / 2; }
+#aboutMe{ grid-area: 3 / 2 / 3 / 2; }
 
 
 
@@ -616,11 +618,12 @@ main{
     background: rgb(42 42 42 / .8);
     z-index: 999;
     border-radius: 12px;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     visibility: hidden;
 }
 #contextMenu .contextmenu-section{
-    padding: 16px 10px 16px 10px;
+    padding: 16px 10px;
     color: #fff;
     font-size: 16px;
 }
@@ -654,6 +657,7 @@ main{
     left: 50%;
     translate: -50% 0;
     background: rgb(20 20 20 / .8);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     width: 640px;
     padding: var(--_padding);
@@ -1220,7 +1224,7 @@ main{
 #calculator input{
     font-family: var(--ff);
     border: none;
-    background: transparent;
+    background: #0000;
     color: #fff;
     text-align: right;
     width: 300px;
@@ -1282,7 +1286,7 @@ form .user-box input{
     border: none;
     border-bottom: 1px solid var(--white);
     outline: none;
-    background: transparent;
+    background: #0000;
     font-family: var(--ff);
     transition: border-color .3s ease;
 }
@@ -1312,7 +1316,7 @@ form .user-box input:required ~ label::after{
 form textarea{
     width: 100%;
     padding: 10px 15px;
-    background: transparent;
+    background: #0000;
     color: var(--white);
     border: 0;
     border-bottom: 1px solid var(--white);
@@ -1377,6 +1381,7 @@ form .user-box:has(#email){
     gap: 2rem;
     background: #aaa7;
     color: #000;
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     transition: opacity 1s ease;
 }
@@ -1394,7 +1399,7 @@ form .user-box:has(#email){
     top: 15px;
     right: 15px;
     color: #790000;
-    background: transparent;
+    background: #0000;
 }
 #closeFormValid svg{
     width: 25px;
@@ -1481,6 +1486,5 @@ body.page #pagePreloader section .loader-object:nth-child(1){ animation-name: pr
 body.page #pagePreloader section .loader-object:nth-child(2){ animation-name: preloader-page-2; }
 body.page #pagePreloader section .loader-object:nth-child(3){ animation-name: preloader-page-3; }
 body.page #pagePreloader section .loader-object:nth-child(4){ animation-name: preloader-page-4; }
-#pagePreloader.loaded section .loader-object{
-    animation: unset;
-}
+
+#pagePreloader.loaded section .loader-object{ animation: unset; }
