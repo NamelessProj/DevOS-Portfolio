@@ -1,4 +1,4 @@
-import {visualNovel} from "./visualNovel.js";
+import {visualNovel} from "./visualNovel.js"; // IMPORTING THE VN
 
 // ELEMENTS
 const playButton = document.getElementById('playBtn');
@@ -403,13 +403,6 @@ function showSlide(index){
 
 
 // HANDLE CLICK AND KEYBOARD INPUT
-
-// GO BACK IN TIME BUTTON
-/*backBtn.addEventListener('click', (e) => {
-    if(state.waitingOnUserInput || state.waitingOnUserOptions) return;
-    e.preventDefault();
-    previousSlide();
-});*/
 
 // HIDE THE TEXT
 hideBtn.addEventListener('click', (e) => {
