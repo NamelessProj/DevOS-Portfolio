@@ -1,17 +1,19 @@
 @font-face {
     font-family: 'ringbearer';
     font-weight: 400;
-    src: url("./FONTS/ringbearer.medium.woff2") format("woff2"),
-    url("./FONTS/ringbearer.medium.woff") format("woff"),
-    url("./FONTS/ringbearer.medium.ttf");
+    src: 
+        url("./FONTS/ringbearer.medium.woff2") format("woff2"),
+        url("./FONTS/ringbearer.medium.woff") format("woff"),
+        url("./FONTS/ringbearer.medium.ttf");
 }
 
 @font-face {
     font-family: 'open-sans';
     font-weight: 400;
-    src: url("./FONTS/open-sans.regular.woff2") format("woff2"),
-    url("./FONTS/open-sans.regular.woff") format("woff"),
-    url("./FONTS/open-sans.regular.ttf");
+    src: 
+        url("./FONTS/open-sans.regular.woff2") format("woff2"),
+        url("./FONTS/open-sans.regular.woff") format("woff"),
+        url("./FONTS/open-sans.regular.ttf");
 }
 
 :root{
@@ -47,6 +49,9 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     shape-margin: 1rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ul {
@@ -62,11 +67,6 @@ ul {
     position: absolute;
     white-space: nowrap;
     width: 1px;
-}
-
-img{
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 
@@ -153,6 +153,7 @@ h1{
     transition: opacity .3s linear;
 
     background: #0009;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     color: #eee;
 }
@@ -288,13 +289,13 @@ body.fullscreen #programToggleFullScreen .expand{ visibility: hidden; }
     inset-inline: 0;
     top: -25px;
     height: 25px;
-    background: linear-gradient(to top, rgb(0 0 0 / .5) 25%, transparent);
+    background: linear-gradient(to top, rgb(0 0 0 / .5) 25%, #0000);
 }
 #text-box:has(p.hide){
     opacity: 0;
 }
 #text-box:has(p.hide) ~ #quick-menu{
-    background: transparent;
+    background: #0000;
 }
 #name{
     width: min(100% - 2rem, 1900px);
