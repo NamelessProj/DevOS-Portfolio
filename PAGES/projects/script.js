@@ -4,7 +4,10 @@ const projectsAll = [
         Name: 'Portfolio',
         Image: 'portfolio.jpg',
         Links: {
-            Information: 'Well, you\'re literally on it right now.'
+            Information: 'Well, you\'re literally on it right now.',
+            Github: 'https://github.com/NamelessProj/DevOS-Portfolio',
+            Behance: 'https://www.behance.net/gallery/197731289/DevOS-My-Portfolio',
+            Website: 'https://portfolio-psi-azure-25.vercel.app'
         }
     },
     {
@@ -21,7 +24,8 @@ const projectsAll = [
         Name: 'Visual Novel',
         Image: 'visualNovel.jpg',
         Links: {
-            Information: 'I\'ve always wanted to do a Visual Novel and to build my own library to do that.'
+            Information: 'I\'ve always wanted to do a Visual Novel and to build my own library to do that.',
+            Github: 'https://github.com/NamelessProj/DevOS-Portfolio/tree/main/PAGES/aboutMe',
         }
     },
     {
@@ -88,6 +92,8 @@ const projects = shuffleArray(projectsAll); // HAVING ALL PROJECTS IN RANDOM PLA
 
 const carousel = document.querySelector('.carousel');
 
+
+
 // PUTTING EVERY PROJECTS INTO THE CAROUSEL
 const imgOrigin = './IMG/';
 for(let i = 0; i < projects.length; i++){
@@ -142,7 +148,7 @@ function changeProjectTitle(index, writing = true){
     const speed = transitionSpeed / index.Name.length;
     titleProjectContainer.innerHTML = '&emsp;';
 
-    // WRITING THE NAME CHARACTERTeR BY CHARACTER
+    // WRITING THE NAME CHARACTER BY CHARACTER
     function typeWriter(indexCh = 0){
         if(timeoutWriter && newSlideIsSetting){
             clearTimeout(timeoutTypeWriter);
@@ -169,6 +175,7 @@ function changeProjectTitle(index, writing = true){
     setTimeout(() => { timeoutWriter = null; });
 }
 
+// SET THE LINKS OF THE CURRENT PROJECT
 function setElementLinks(indexProject, changeTitle = true){
     setTimeout(() => {
         informationDialog.querySelector('h3 span').innerText = indexProject.Name;
@@ -182,6 +189,7 @@ function setElementLinks(indexProject, changeTitle = true){
     changeProjectTitle(indexProject, changeTitle);
 }
 
+// CHANGING THE CURRENT PROJECT
 function rotateCarousel(direction, button = false){
     if(buttonJustBeenClicked) return;
 
