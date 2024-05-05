@@ -154,7 +154,7 @@ Another reason is that, from the outset, I had a very clear idea of what I wante
 
 Below you'll find the selection menu for the Muse Dash game, which served as the inspiration and template for my project page.
 
-![](https://files.catbox.moe/s9eh3h.png "The selection menu from Muse Dash")
+![The selection menu from Muse Dash](https://files.catbox.moe/s9eh3h.png "The selection menu from Muse Dash")
 
 # Graphics Choices
 ## Home page
