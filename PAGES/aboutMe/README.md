@@ -121,7 +121,11 @@ One day I'll do a better version of that mini-library, I'll do a real library.
     - [Staying in the same scene but to a particular index and we restart the music](#staying-in-the-same-scene-but-to-a-particular-index-and-we-restart-the-music)
 
 ## How to use this
-You need to add the files `visualNovel.js` and `script.js` at the end of your body tag and the only thing you need to do is to write your scenario into the `visualNovel.js`.
+You only need to add the `script.js` at the end of your body tag and to write your scenario into the `visualNovel.js`. The `visualNovel.js` file will be imported with the `script.js` file. To import the `script.js`, use the HTML below.
+
+```html
+<script src="./script.js" type="module"></script>
+```
 
 I've tried my best doing something easy to use with a lot of options, hope you'll like my job.
 
