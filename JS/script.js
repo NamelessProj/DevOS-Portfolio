@@ -33,7 +33,7 @@ if(document.getElementById('loaderAnimation')){
         updateProgress(progress);
 
         intervalTimer = setInterval(() => {
-            progress = currentStep === maxSteps ? 100 : progress + Math.floor(Math.random() * 16);
+            progress = currentStep === maxSteps ? 100 : progress + Math.floor(Math.random() * 16); // ADDING A MAX-STEP TO PREVENT THE LOADER TO TAKE FOREVER
             if(progress > 100) progress = 100;
             currentStep++;
             updateProgress(progress);
@@ -108,6 +108,7 @@ if(document.getElementById('activateYourWindows')){
         }
     }
 
+     // ACTIVATE DevOS
     devOS.addEventListener('click', () => {
         handleSound('EXPLOSION');
         const animationDuration = Number(getComputedStyle(document.getElementById('crownContainer')).getPropertyValue('--animation-duration').split('ms')[0]);
@@ -203,7 +204,7 @@ function getTime(){
     if(hours.length < 2) hours = `0${hours}`;
     if(minutes.length < 2) minutes = `0${minutes}`;
 
-    if(minutes === '00' && hours === '00') getDate();
+    if(minutes === '00' && hours === '00') getDate(); // IF MIDNIGHT, GET NEW DATE
 
     timeContainer.innerText = `${hours}:${minutes}`;
 }
@@ -379,6 +380,7 @@ programsAction.forEach(button => {
     });
 });
 
+// CLOSE THE PROGRAM
 programsCloseButton.forEach(button => {
     button.addEventListener('click', () => {
         const parentProgram = button.parentElement.parentElement.parentElement;
