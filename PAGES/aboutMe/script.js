@@ -92,7 +92,6 @@ if(visualNovel.Settings.hasOwnProperty('PreloadImages') && visualNovel.Settings.
 // REPLACE VARIABLES IN TEXT
 function replaceVariablesInText(text, variableName, variableValue){
     const regex = `{{${variableName}}}`;
-    console.log(regex);
     return text.replaceAll(regex, variableValue);
 }
 
